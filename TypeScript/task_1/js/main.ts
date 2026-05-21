@@ -2,7 +2,7 @@ interface Teacher {
     readonly firstName: string;
     readonly lastName: string;
     fullTimeEmployee: boolean;
-    yearsOfExperience: number;
+    yearsOfExperience?: number;
     location: string;
     [key: string]: any;
 }
@@ -12,18 +12,18 @@ interface Directors extends Teacher {
 }
 
 const teacher1: Teacher = {
-    firstName:'Yunus',
-    lastName:'Uzun',
+    firstName: 'Kylian',
+    lastName: 'Mpabbe',
     fullTimeEmployee: true,
     yearsOfExperience: 2,
-    location:'Frejus'
+    location: 'Marseille',
 }
 
 const teacher2: Teacher = {
-    firstName:'Vedat',
-    lastName:'Uzun',
+    firstName: 'Ousmane',
+    lastName: 'Dembele',
     fullTimeEmployee: false,
-    location:'Le Luc',
+    location: 'Paris',
     contract: false,
 }
 console.log(teacher2);
