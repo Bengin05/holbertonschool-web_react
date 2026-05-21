@@ -31,6 +31,6 @@ const students: Student[] = [student1, student2];
         list.appendChild(nameRow);
         list.appendChild(locationRow);
 
-    studenttable.appendChild(list);
+    studentTable.appendChild(list);
     });
     document.body.appendChild(studentTable);
